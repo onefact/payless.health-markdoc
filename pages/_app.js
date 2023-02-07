@@ -22,7 +22,7 @@ import 'codemirror/lib/codemirror.css';
 import '../public/globals.css';
 
 const TITLE = 'Payless Health';
-const DESCRIPTION = 'Search engine and handbook for finding and navigating health care.';
+const DESCRIPTION = 'Search engine and help pages for finding and navigating health care.';
 const MARKDOC = `
 
 
@@ -80,7 +80,7 @@ export default function MyApp(props) {
     ? collectHeadings(pageProps.markdoc.content)
     : [];
 
-  const isDocs = props.router.asPath.startsWith('/handbook');
+  const isDocs = props.router.asPath.startsWith('/help');
   const isLandingPage = props.router.pathname === '/';
 
   React.useEffect(() => console.log(MARKDOC), []);
@@ -141,7 +141,7 @@ export default function MyApp(props) {
         Skip to content
       </a>
       <TopNav>
-        <Link href="https://handbook.payless.health">Handbook</Link>
+        <Link href="https://help.payless.health">Help</Link>
         <Link href="https://github.com/onefact/payless.health">GitHub</Link>
         <Link href="https://github.com/onefact/payless.health/discussions">
           Community
@@ -161,7 +161,7 @@ export default function MyApp(props) {
       </div>
       <div className="footer-bar">
         <Footer landing={isLandingPage}>
-          <Link href="https://handbook.payless.health">Handbook</Link>
+          <Link href="https://help.payless.health">Help</Link>
           <Link href="https://github.com/onefact/payless.health">GitHub</Link>
           <Link href="https://github.com/onefact/payless.health/discussions">
             Community
