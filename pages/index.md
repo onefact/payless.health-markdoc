@@ -65,7 +65,7 @@ description: From patients to doctors, Payless.health is a free platform to help
 
 Use the search engine at the top to get started. Try searching for a medication, procedure, treatment, hospital nearby.
 
-[Explore the Payless Health Health Pages](https://help.payless.health) {% .primary %}
+[Explore the Payless Health Help Pages](https://help.payless.health) {% .primary %}
 
 {% /item %}
 
