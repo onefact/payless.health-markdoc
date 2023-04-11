@@ -53,7 +53,7 @@ body {
 }
 
 .accordion-header:hover {
-  background-color: #444;
+  background-color: #FAF9F6;
 }
 
 .accordion-content {
@@ -76,22 +76,18 @@ document.addEventListener("DOMContentLoaded", function () {
     header.addEventListener("click", function() {
       const content = header.nextElementSibling;
 
-      if (header.classList.contains("active")) {
-        header.classList.remove("active");
-        content.style.maxHeight = "0px";
+      if (content.style.display === "block") {
+        content.style.display = "none";
       } else {
         accordionHeaders.forEach((otherHeader) => {
-          otherHeader.classList.remove("active");
-          otherHeader.nextElementSibling.style.maxHeight = "0px";
+          otherHeader.nextElementSibling.style.display = "none";
         });
 
-        header.classList.add("active");
-        content.style.maxHeight = content.scrollHeight + "px";
+        content.style.display = "block";
       }
     });
   });
 });
-
   </script>
 </head>
 <body>
