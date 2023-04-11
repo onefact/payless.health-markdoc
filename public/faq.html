@@ -40,7 +40,7 @@ body {
 }
 
 .accordion-header {
-  background-color: #C1C1BD;
+  background-color: #f5f5f5;
   color: #C1C1BD;
   padding: 15px;
   font-size: 18px;
@@ -70,11 +70,11 @@ body {
 
   </style>
    <script>
-    document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   const accordionHeaders = document.querySelectorAll(".accordion-header");
 
   accordionHeaders.forEach((header) => {
-    header.addEventListener("click", () => {
+    header.addEventListener("click", function() {
       const content = header.nextElementSibling;
 
       if (header.classList.contains("active")) {
