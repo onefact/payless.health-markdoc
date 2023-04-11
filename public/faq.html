@@ -22,6 +22,7 @@ body {
   background-color: white;
   padding: 20px;
   justify-content: center;
+  max-width: 620px;
 }
              @media screen and (max-width: 1023px){
   body {
@@ -37,7 +38,6 @@ body {
 
 .accordion-item {
   background-color: #fff;
-  border-radius: 1px;
   margin-bottom: 0px;
 }
 
@@ -51,16 +51,15 @@ body {
   outline: none;
   width: 100%;
   cursor: pointer;
-  border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
 .accordion-header:hover {
-  background-color: #FAFAFA;
+  background-color: #AAAF;
 }
 
 .accordion-content {
-  background-color: #f5f5f5;
+  background-color: #FAFAFA;
   padding: 15px;
   display: none;
   overflow: hidden;
@@ -94,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
   </script>
 </head>
 <body>
-     <div style="display: flex; justify-content: center;" width="620em" max-width="calc(100% - 10em)">
+     <div style="display: flex; justify-content: center;" max-width="620em">
           <div>
 <h1 style="margin-top: 0.5em;">One Fact Foundation – Licensing FAQs</h1>
 <p><strong>Last updated: 2023-03-21</strong></p>
