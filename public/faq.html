@@ -21,10 +21,13 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: white;
   padding: 20px;
-  width: 620em; 
-  max-width: calc(100% - 10em);
   justify-content: center;
 }
+             @media screen and (max-width: 1023px){
+  body {
+    width: 100%;
+}
+  }
 
 .accordion {
   width: 100%;
@@ -91,18 +94,21 @@ document.addEventListener("DOMContentLoaded", function () {
   </script>
 </head>
 <body>
-     <div style="justify-content: center" width="620em" max-width="calc(100% - 10em)">
-<h1 style="margin-top: 2em;">One Fact Foundation – Licensing FAQs</h1>
+     <div style="display: flex; justify-content: center;" width="620em" max-width="calc(100% - 10em)">
+          <div>
+<h1 style="margin-top: 0.5em;">One Fact Foundation – Licensing FAQs</h1>
 <p><strong>Last updated: 2023-03-21</strong></p>
   <p>The following FAQs are provided in the hopes that they are helpful to the broader community. Please note that One Fact does not provide legal advice, and this is not intended as a substitution for professional legal advice. If you have questions regarding open source and open content licensing generally or questions about specific licenses, please consult with your own legal counsel.</p>
     </div>
+          </div>
           <br></br>
   <div class="accordion">
   <div class="accordion-item">
     <button class="accordion-header">What license is One Fact’s code released under?</button>
     <div class="accordion-content">
       <p>Code written by One Fact is made available under the Apache License, version 2.0 (Apache-2.0): <a href="https://www.apache.org/licenses/LICENSE-2.0.txt">https://www.apache.org/licenses/LICENSE-2.0.txt</a></p>
-      <p>Like virtually all open source software, One Fact’s software relies upon a variety of other open source projects and dependencies, many of which may be under other open source licenses.</p>
+                <br></br>
+         <p>Like virtually all open source software, One Fact’s software relies upon a variety of other open source projects and dependencies, many of which may be under other open source licenses.</p>
     </div>
   </div>
   <div class="accordion-item">
