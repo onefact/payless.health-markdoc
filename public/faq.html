@@ -12,59 +12,84 @@
 
 <style>
   * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: white;
-  padding: 20px;
-  justify-content: center;
-  max-width: 620px;
-  margin: auto;
-}
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    padding: 20px;
+    justify-content: center;
+    max-width: 620px;
+    margin: auto;
+  }
 
-.accordion {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  border-radius: 5px;
-}
+  h1 {
+    font-weight: 500;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+  }
 
-.accordion-item {
-  background-color: #fff;
-  margin-bottom: 0px;
-}
+  p {
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.6em;
+    margin-bottom: 1.5em;
+  }
 
-.accordion-header {
-  background-color: #d4b3fc;
-  color: black;
-  padding: 15px;
-  font-size: 18px;
-  text-align: left;
-  border: none;
-  outline: none;
-  width: 100%;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
+  a {
+    color: #0071e3;
+    text-decoration: none;
+  }
 
-.accordion-header:hover {
-  background-color: #FAFAFA;
-}
+  a:hover {
+    text-decoration: underline;
+  }
 
-.accordion-content {
-  background-color: #FAFAFA;
-  padding: 15px;
-  display: none;
-  overflow: hidden;
-}
+  .accordion {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
 
-.accordion-content p {
-  margin: 0;
-}
+  .accordion-item {
+    background-color: #fff;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .accordion-header {
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: left;
+    border: none;
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .accordion-header:hover {
+    background-color: #e6e6e6;
+  }
+
+  .accordion-content {
+    background-color: #fff;
+    padding: 15px;
+    display: none;
+    overflow: hidden;
+  }
+
+  .accordion-content p {
+    margin: 0;
+  }
 
   </style>
    <script>
