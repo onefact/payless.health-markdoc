@@ -104,7 +104,7 @@ export function ThemeToggle() {
       //
     }
 
-    const darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkQuery = window.matchMedia('(prefers-color-scheme: light)');
     darkQuery.addListener((e) => setTheme(e.matches ? 'dark' : 'light'));
 
     setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'));
