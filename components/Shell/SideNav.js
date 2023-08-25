@@ -3,14 +3,12 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 const items = [
-  // {
-  //   title: 'Projects',
-  //   links: [
-  //     { href: '/projects/payless-health', children: 'Payless Health' },
-  //     { href: '/projects/clinicalbert', children: 'ClinicalBERT' },
-  //     { href: '/projects/data-thinking', children: 'Data Thinking' },
-  //   ]
-  // },
+  {
+    title: 'Services',
+    links: [
+      { href: '/save-millions-in-health-care-costs-as-an-employer', children: 'Reducing health care cost' },
+    ]
+  },
 ];
 
 export function SideNav() {
