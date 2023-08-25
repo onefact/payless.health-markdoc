@@ -141,12 +141,10 @@ export default function MyApp(props) {
         Skip to content
       </a>
       <TopNav>
-        <Link href="https://help.payless.health">Help</Link>
-        <Link href="https://github.com/onefact/payless.health">GitHub</Link>
-        <Link href="https://github.com/onefact/payless.health/discussions">
-          Community
+        <Link href="https://onefact.org/team">Team</Link>
+        <Link href="/save-millions-in-health-care-costs-as-an-employer">
+          Services
         </Link>
-        <Link href="https://twitter.com/PaylessHealth">Twitter</Link>
         {/* <span className="primary no-mobile">
           <Link href="/sandbox">Try</Link>
         </span> */}
@@ -161,12 +159,11 @@ export default function MyApp(props) {
       </div>
       <div className="footer-bar">
         <Footer landing={isLandingPage}>
-          <Link href="https://help.payless.health">Help</Link>
-          <Link href="https://github.com/onefact/payless.health">GitHub</Link>
-          <Link href="https://github.com/onefact/payless.health/discussions">
-            Community
+          <Link href="/save-millions-in-health-care-costs-as-an-employer">Services</Link>
+          <Link href="https://github.com/onefact">GitHub</Link>
+          <Link href="https://onefact.org/team">
+            Team
           </Link>
-          <Link href="https://twitter.com/PaylessHealth">Twitter</Link>
         </Footer>
       </div>
       <style jsx global>
